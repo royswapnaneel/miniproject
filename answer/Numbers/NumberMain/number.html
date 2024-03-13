@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+    <style>
+        .bg {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            position: fixed; /* Ensures the background covers the entire viewport */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-image: url(./images/number\ background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.25; /* Adjust the opacity here (0.2 for 20% opacity) */
+            z-index: -1; /* Ensures the background is behind other content */
+        }
+        .content {
+            position: relative; /* Necessary for z-index */
+            z-index: 1; /* Ensures the content appears above the background */
+            text-align: center;
+            font-size: 36px;
+            font-weight: 400;
+            font-family: 'Times New Roman', Times, serif;
+            color: #06142E;
+        }
+        .container {
+            display: flex; /* Use flexbox to arrange boxes side by side */
+        }
+        .box {
+            width: 50vw;
+            height: 25px;
+            border: 2px solid #05161A;
+            padding: 10px;
+            margin-right: 20px; 
+            margin-top: 20px;
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Align content horizontally in the center */
+            align-items: center; /* Align content vertically in the center */
+            font-size: 24px;
+            background: #86A8CF;
+            text-decoration: none; /* Remove default underline for anchor */
+            color: #05161A; /* Set text color */
+        }
+        .box:hover {
+            background: #86a8cf8f; /* Change background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="content">
+        <h1>NUMBERS</h1>
+    </div>
+    <hr style="border: 0.75px solid #06142E;">
+    <div class="container">
+        <a href="../Prime/Main/prime1.html" class="box">
+            Prime 
+        </a>
+        <a href="../Strings/Palindrome.html" class="box">
+            Buzz
+        </a>
+        <a href="../Arrays/duplicate.html" class="box">
+            Armstrong
+        </a>
+    </div>
+    <div class="container">
+        <a href="../Numbers/NumberMain/number.html" class="box">
+            Special 
+        </a>
+        <a href="../Strings/Palindrome.html" class="box">
+            Odd/Even
+        </a>
+        <a href="../Arrays/duplicate.html" class="box">
+            Niven
+        </a>
+    </div>
+</body>
+</html>
